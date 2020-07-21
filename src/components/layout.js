@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from "gatsby";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
-          { /* TODO: ここにサイト自体のタイトルをいれる */ }
+          { props.siteTitle }
         </a>
 
         { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
