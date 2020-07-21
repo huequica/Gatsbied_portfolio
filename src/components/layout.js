@@ -23,7 +23,16 @@ const NavBar = () => {
 };
 
 
-const Layout = ({ contents }) => {
+  const title = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `).site.siteMetadata.title;
+
   return (
     <>
       <NavBar />
