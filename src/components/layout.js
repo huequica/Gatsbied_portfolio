@@ -21,7 +21,9 @@ const Layout = (props) => {
   return (
     <>
       <NavBar siteTitle={ title } />
-      { contents }
+      <section className='section'>
+        { contents }
+      </section>
     </>
   );
 };
