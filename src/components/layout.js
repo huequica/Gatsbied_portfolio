@@ -25,6 +25,9 @@ const NavBar = (props) => {
 };
 
 
+const Layout = (props) => {
+  const contents = props.children;
+
   const title = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -37,10 +40,14 @@ const NavBar = (props) => {
 
   return (
     <>
-      <NavBar />
+      <NavBar siteTitle={ title } />
       { contents }
     </>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
