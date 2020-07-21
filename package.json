@@ -20,6 +20,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "eslint-config-react-app": "^5.2.1",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -30,6 +31,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint src/",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

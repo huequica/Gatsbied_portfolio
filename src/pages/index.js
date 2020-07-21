@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const IndexPage = () => (
   <>
@@ -7,4 +7,4 @@ const IndexPage = () => (
   </>
 );
 
-export default IndexPage
+export default IndexPage;
