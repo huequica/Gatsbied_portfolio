@@ -46,8 +46,13 @@ const Layout = (props) => {
   );
 };
 
+Layout.defaultProps = {
+  disableMargin: false
+};
+
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  disableMargin: PropTypes.bool
 };
 
 export default Layout;
