@@ -5,6 +5,24 @@ import { useStaticQuery, graphql } from "gatsby";
 import './scss/base.scss';
 import NavBar from './navbar';
 
+const Margin = ({ children, disableMargin }) => {
+
+  if(disableMargin === true){
+
+    // No section Render
+    return (
+      { children }
+    );
+  }
+  else {
+    return (
+      <section className='section'>
+        { children }
+      </section>
+    );
+  }
+};
+
 const Layout = (props) => {
   const contents = props.children;
 
