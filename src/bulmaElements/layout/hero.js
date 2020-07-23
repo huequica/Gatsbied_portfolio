@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 /**
  * hero Style decider
- *  @param {props} componentOrder component props
+ *  @param {object} componentOrder component props
  *  @param {array<string>} baseHeroStyles heroStyle base definition
  *
  *  @return {array<string>} decided heroStyles
