@@ -39,7 +39,7 @@ const Layout = (props) => {
   return (
     <>
       <NavBar siteTitle={ title } />
-      <Margin>
+      <Margin disableMargin={ props.disableMargin }>
         { contents }
       </Margin>
     </>
