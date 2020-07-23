@@ -6,15 +6,10 @@ import './scss/base.scss';
 import NavBar from './navbar';
 
 const Margin = ({ children, disableMargin }) => {
-
-  if(disableMargin === true){
-
+  if (disableMargin === true) {
     // No section Render
-    return (
-      { children }
-    );
-  }
-  else {
+    return children;
+  } else {
     return (
       <section className='section'>
         { children }
