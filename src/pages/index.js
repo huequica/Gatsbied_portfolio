@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import * as Bulma from '../bulmaElements/index';
+import * as Bulma from '../bulmaElements';
 
 const IndexPage = () => (
   <Layout>
