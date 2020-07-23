@@ -46,7 +46,8 @@ Hero.propTypes = {
   // Not Required
   children: PropTypes.node,
   subtleGradient: PropTypes.bool,
-  colorStyle: PropTypes.string
+  colorStyle: PropTypes.string,
+  size: PropTypes.string
 };
 
 export { Hero };
