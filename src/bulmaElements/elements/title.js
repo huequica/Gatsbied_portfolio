@@ -1,6 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * Title( `<h1>` ) element render
+ * https://bulma.io/documentation/elements/title/
+ * @param {node} props.children **Required**
+
+ * @param {number} props.is Optional(default: 3)
+ */
 const Title = (props) => {
   // Required
   const contents = props.children;
