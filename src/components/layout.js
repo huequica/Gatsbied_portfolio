@@ -39,9 +39,9 @@ const Layout = (props) => {
   return (
     <>
       <NavBar siteTitle={ title } />
-      <section className='section'>
+      <Margin>
         { contents }
-      </section>
+      </Margin>
     </>
   );
 };
