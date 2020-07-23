@@ -25,10 +25,10 @@ const heroStyleDecide = (componentOrder, baseHeroStyles) => {
 
 const Hero = (props) => {
   const contents = props.children;
-  const [heroStyle, setHeroStyle] = React.useState('hero');
+  const heroStyles = heroStyleDecide(props, ['hero']);
 
   return (
-    <section className={ heroStyle }>
+    <section className={ heroStyles.join(' ') }>
       <div className='hero-body'>
         <div className='container'>
           { contents }
