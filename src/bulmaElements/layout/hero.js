@@ -23,6 +23,15 @@ const heroStyleDecide = (componentOrder, baseHeroStyles) => {
   return heroStyles;
 };
 
+/**
+ * Title( `<section class='hero'>` ) element render
+ * https://bulma.io/documentation/layout/hero/
+ *
+ * @param {node} props.children inner HTML(optional)
+ * @param {bool} props.subtleGradient if `true`, effected gradation to hero component
+ * @param {string} props.colorStyle color definition(e.g. `is-primary`)
+ * @param {string} props.size size definition(e.g. `is-medium`)
+ */
 const Hero = (props) => {
   const contents = props.children;
   const heroStyles = heroStyleDecide(props, ['hero']);
