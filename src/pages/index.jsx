@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
-import * as Bulma from '../bulmaElements';
+import * as Bulma from '@bulma';
 
 const IndexPage = () => (
   <Layout disableMargin={ true }>
