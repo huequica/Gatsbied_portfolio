@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
  * @param {node} props.children **Required**
 
  * @param {number} props.is Optional(default: 3)
+ * @param {bool} props.subTitle Optional(default: false)
  */
 const Title = (props) => {
   // Required
