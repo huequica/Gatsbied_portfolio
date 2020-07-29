@@ -12,8 +12,12 @@ const Title = (props) => {
   // Required
   const contents = props.children;
   const elementSize = props.is;
+
+  // `title` or `subtitle`
+  const titleClass = props.subTitle ? 'subtitle' : 'title';
+
   return (
-    <h1 className={ `title is-${elementSize}` } >
+    <h1 className={ `${titleClass} is-${elementSize}` } >
       { contents }
     </h1>
   );
