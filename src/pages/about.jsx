@@ -7,6 +7,8 @@ const About = () => (
     <Bulma.layout.Hero colorStyle='is-primary'>
       <Bulma.elements.Title>/About</Bulma.elements.Title>
     </Bulma.layout.Hero>
+
+    <Bulma.elements.Title>{ 'huequica.xyz' }</Bulma.elements.Title>
   </Layout>
 );
 
