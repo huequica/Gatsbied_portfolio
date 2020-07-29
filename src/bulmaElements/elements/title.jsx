@@ -20,12 +20,14 @@ const Title = (props) => {
 };
 
 Title.defaultProps = {
-  is: 3
+  is: 3,
+  subTitle: false
 };
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
-  is: PropTypes.number
+  is: PropTypes.number,
+  subTitle: PropTypes.bool
 };
 
 export { Title };
