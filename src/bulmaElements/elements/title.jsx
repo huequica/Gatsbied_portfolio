@@ -7,25 +7,32 @@ import PropTypes from 'prop-types';
  * @param {node} props.children **Required**
 
  * @param {number} props.is Optional(default: 3)
+ * @param {bool} props.subTitle Optional(default: false)
  */
 const Title = (props) => {
   // Required
   const contents = props.children;
   const elementSize = props.is;
+
+  // `title` or `subtitle`
+  const titleClass = props.subTitle ? 'subtitle' : 'title';
+
   return (
-    <h1 className={ `title is-${elementSize}` } >
+    <h1 className={ `${titleClass} is-${elementSize}` } >
       { contents }
     </h1>
   );
 };
 
 Title.defaultProps = {
-  is: 3
+  is: 3,
+  subTitle: false
 };
 
 Title.propTypes = {
   children: PropTypes.node.isRequired,
-  is: PropTypes.number
+  is: PropTypes.number,
+  subTitle: PropTypes.bool
 };
 
 export { Title };
