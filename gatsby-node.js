@@ -5,10 +5,16 @@
  */
 
 // You can delete this file if you're not using it
+const resolve = require('path').resolve
+
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       extensions: ['.js', '.jsx'],
+      alias: {
+        '@bulma' : resolve(__dirname, 'src/bulmaElements'),
+        '@layout': resolve(__dirname, 'src/components/layout')
+      }
     },
   });
 }
