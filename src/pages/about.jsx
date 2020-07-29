@@ -8,7 +8,7 @@ const About = () => (
       <Bulma.elements.Title>/About</Bulma.elements.Title>
     </Bulma.layout.Hero>
 
-    <Bulma.elements.Title>{ 'huequica.xyz' }</Bulma.elements.Title>
+    <Bulma.elements.Title subTitle>{ 'huequica.xyz' }</Bulma.elements.Title>
   </Layout>
 );
 
