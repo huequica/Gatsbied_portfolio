@@ -4,17 +4,18 @@ import * as Bulma from '@bulma';
 const MyName = () => {
   return (
     <>
-      <Bulma.elements.Title subTitle>Haru Yakumo</Bulma.elements.Title>
-      <div className='columns'>
-        <div className='column'>
+      <Bulma.elements.Title subTitle>Haru Yakumoについて</Bulma.elements.Title>
+
+      <Bulma.Column Parent>
+        <Bulma.Column>
           hoge
+        </Bulma.Column>
 
-        </div>
-        <div className='column'>
+        <Bulma.Column>
           fuga
+        </Bulma.Column>
 
-        </div>
-      </div>
+      </Bulma.Column>
     </>
   );
 };
