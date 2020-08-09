@@ -3,6 +3,15 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import propTypes from 'prop-types';
 
+/**
+ * Bulma Image Render
+ * https://bulma.io/documentation/elements/image/
+ * @param {string} props.filename **REQUIRE** resource filename(`icon.jpg`, `icon.png`)
+ * @param {string} props.alt **REQUIRE** image alt text
+ *
+ * @param {string} props.dimension image size dimension(`128x128`, `3by1`)
+ * @param {boolean} props.isRounded if you want to create rounded image, enable this.
+ */
 const Image = (props) => {
   // fetching Image Resources
   const { allImageSharp } = useStaticQuery(graphql`
