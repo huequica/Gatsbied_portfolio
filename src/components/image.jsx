@@ -40,10 +40,6 @@ const Image = (props) => {
   );
 };
 
-Image.defaultProps = {
-  dimension: '128x128'
-};
-
 Image.propTypes = {
   // Required
   filename: propTypes.string.isRequired,
