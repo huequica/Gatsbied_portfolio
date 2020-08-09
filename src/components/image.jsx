@@ -10,7 +10,6 @@ import propTypes from 'prop-types';
  * @param {string} props.alt **REQUIRE** image alt text
  *
  * @param {string} props.dimension image size dimension(`128x128`, `3by1`)
- * @param {boolean} props.isRounded if you want to create rounded image, enable this.
  */
 const Image = (props) => {
   // fetching Image Resources
@@ -36,16 +35,12 @@ const Image = (props) => {
 
   return (
     <figure className={ dimension ? `image is-${dimension}` : 'image' }>
-      <Img fluid={ searchedImage }
-        alt={ props.alt }
-        className={ props.isRounded ? 'is-rounded' : '' }
-      />
+      <Img fluid={ searchedImage } alt={ props.alt } />
     </figure>
   );
 };
 
 Image.defaultProps = {
-  isRounded: false,
   dimension: '128x128'
 };
 
@@ -55,7 +50,6 @@ Image.propTypes = {
   alt: propTypes.string.isRequired,
 
   // Optional
-  isRounded: propTypes.bool,
   dimension: propTypes.string
 };
 
