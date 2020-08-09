@@ -9,7 +9,7 @@ const MyName = () => {
 
       <Bulma.Column Parent>
         <Bulma.Column>
-          <Image filename='dark.png' alt='icon'/>
+          <Image filename='dark.png' alt='icon' dimension='128x128'/>
         </Bulma.Column>
 
         <Bulma.Column>
