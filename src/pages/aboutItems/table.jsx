@@ -18,6 +18,8 @@ const Table = () => {
           <td>Live</td>
           <td>Toyota, Aichi</td>
         </tr>
+
+        { /* TODO: あとでここはそれぞれ別ページのリンクにしたいかも */ }
         <tr>
           <td>Like</td>
           <td>MusicGame, Web Dev(FrontEnd), DDLC</td>
