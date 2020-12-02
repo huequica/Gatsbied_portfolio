@@ -12,7 +12,9 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       extensions: ['.js', '.jsx'],
       alias: {
-        '@bulma' : resolve(__dirname, 'src/bulmaElements')
+        '@bulma' : resolve(__dirname, 'src/bulmaElements'),
+        '@layout': resolve(__dirname, 'src/components/layout'),
+        '@image' : resolve(__dirname, 'src/components/image')
       }
     },
   });
