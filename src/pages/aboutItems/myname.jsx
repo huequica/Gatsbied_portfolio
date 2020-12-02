@@ -8,7 +8,7 @@ const MyName = () => {
       <Bulma.elements.Title subTitle>Haru Yakumoについて</Bulma.elements.Title>
 
       <Bulma.Column Parent>
-        <Bulma.Column>
+        <Bulma.Column size='is-4'>
           <Image filename='dark.png' alt='icon' dimension='128x128'/>
         </Bulma.Column>
 
