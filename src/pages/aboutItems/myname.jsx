@@ -11,7 +11,7 @@ const MyName = () => {
 
       <Bulma.Column Parent>
         <Bulma.Column size='is-4'>
-          <Image filename='dark.png' alt='icon' dimension='128x128'/>
+          <Image filename='dark.png' alt='icon'/>
         </Bulma.Column>
 
         <Bulma.Column>
