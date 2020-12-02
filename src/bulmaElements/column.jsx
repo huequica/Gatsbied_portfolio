@@ -11,6 +11,9 @@ const Column = ({Parent, size, children}) => {
   let classNames = '';
   classNames += Parent ? 'columns' : 'column';
   
+  // if size specify is not empty, put it to className 
+  if (size !== '') classNames += ` ${ size }`;
+
   return (
     <div className={ classNames }>
       { children }
