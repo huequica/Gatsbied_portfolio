@@ -27,6 +27,7 @@ Column.defaultProps = {
 
 Column.propTypes = {
   children: PropTypes.node,
+  size: PropTypes.string,
   Parent: PropTypes.bool,
 };
 export default Column;
