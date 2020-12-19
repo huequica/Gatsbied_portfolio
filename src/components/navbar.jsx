@@ -10,9 +10,6 @@ const NavBarItems = () => {
           About
         </Link>
 
-        <p class="navbar-item">
-          Documentation
-        </p>
       </div>
     </div>
   );
