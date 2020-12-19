@@ -1,6 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+/**
+ * return navbar state class
+ * @param {bool} state `true` => 'is-active'
+ * @return {string} extention 
+ */
+const askNavbarStateClass = (state) => {
+  return state ? 'is-active' : '';
+};
+
 const NavBarItems = ({ isNowActive }) => {
 
   return (
@@ -14,15 +23,6 @@ const NavBarItems = ({ isNowActive }) => {
       </div>
     </div>
   );
-};
-
-/**
- * return navbar state class
- * @param {bool} state `true` => 'is-active'
- * @return {string} extention 
- */
-const askNavbarStateClass = (state) => {
-  return state ? 'is-active' : '';
 };
 
 const NavBar = (props) => {
