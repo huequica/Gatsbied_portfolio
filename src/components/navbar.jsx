@@ -4,8 +4,9 @@ import { Link } from 'gatsby';
 const NavBarItems = () => {
 
   return (
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
+    <div id="navbarBasicExample" className="navbar-menu">
+      <div className="navbar-start">
+
         <Link to='/about' className='navbar-item'>
           About
         </Link>
@@ -33,7 +34,7 @@ const NavBar = (props) => {
 
         </a>
       </div>
-
+      
       <NavBarItems />
     </nav>
   );
