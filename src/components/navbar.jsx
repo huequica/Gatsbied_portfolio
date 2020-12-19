@@ -1,4 +1,24 @@
 import React from 'react';
+import { Link } from 'gatsby';
+
+const NavBarLinks = ['About'];
+
+const NavBarItems = () => {
+
+  return (
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <p class="navbar-item">
+          Home
+        </p>
+
+        <p class="navbar-item">
+          Documentation
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const NavBar = (props) => {
   return (
@@ -18,6 +38,8 @@ const NavBar = (props) => {
 
         </a>
       </div>
+
+      <NavBarItems />
     </nav>
   );
 };
