@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const NavBarItems = () => {
+const NavBarItems = ({ isNowActive }) => {
 
   return (
     <div id="navbarBasicExample" className="navbar-menu">
@@ -53,7 +53,7 @@ const NavBar = (props) => {
         </a>
       </div>
       
-      <NavBarItems />
+      <NavBarItems isNowActive={ isActive } />
     </nav>
   );
 };
