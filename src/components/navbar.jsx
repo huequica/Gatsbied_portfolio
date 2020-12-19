@@ -26,6 +26,14 @@ const askNavbarStateClass = (state) => {
 };
 
 const NavBar = (props) => {
+
+  const [isActive, setActive] = React.useState(false);
+
+  const toggleNavBarActive = React.useCallback(
+    (() => setActive((prev) => !prev))
+    , [setActive]
+  );
+
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
