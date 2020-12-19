@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 const NavBarItems = ({ isNowActive }) => {
 
   return (
-    <div id="navbarBasicExample" className="navbar-menu">
+    <div id="navbarBasicExample" className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
       <div className="navbar-start">
 
         <Link to='/about' className='navbar-item'>
