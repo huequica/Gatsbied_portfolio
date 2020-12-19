@@ -16,6 +16,15 @@ const NavBarItems = () => {
   );
 };
 
+/**
+ * return navbar state class
+ * @param {bool} state `true` => 'is-active'
+ * @return {string} extention 
+ */
+const askNavbarStateClass = (state) => {
+  return state ? 'is-active' : '';
+};
+
 const NavBar = (props) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
