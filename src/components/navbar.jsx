@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const NavBarLinks = ['About'];
-
 const NavBarItems = () => {
 
   return (
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <p class="navbar-item">
-          Home
-        </p>
+        <Link to='/about' className='navbar-item'>
+          About
+        </Link>
 
         <p class="navbar-item">
           Documentation
