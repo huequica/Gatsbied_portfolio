@@ -16,7 +16,7 @@ const NavBarItems = ({ isNowActive }) => {
     <div id="navbarBasicExample" className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
       <div className="navbar-start">
 
-        <AniLink fade duration={ 1 }
+        <AniLink fade duration={ 0.5 }
           to='/about' className='navbar-item'
         >
           About
@@ -39,7 +39,7 @@ const NavBar = (props) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <AniLink fade duration={ 1 }
+        <AniLink fade duration={ 0.5 }
           to='/' className="navbar-item"
         >
           { props.siteTitle }
