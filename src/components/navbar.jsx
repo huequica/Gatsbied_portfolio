@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 /**
  * return navbar state class
@@ -16,9 +16,11 @@ const NavBarItems = ({ isNowActive }) => {
     <div id="navbarBasicExample" className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
       <div className="navbar-start">
 
-        <Link to='/about' className='navbar-item'>
+        <AniLink fade duration={ 1 }
+          to='/about' className='navbar-item'
+        >
           About
-        </Link>
+        </AniLink>
 
       </div>
     </div>
@@ -37,9 +39,11 @@ const NavBar = (props) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link to='/' className="navbar-item">
+        <AniLink fade duration={ 1 }
+          to='/' className="navbar-item"
+        >
           { props.siteTitle }
-        </Link>
+        </AniLink>
 
         { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */ }
         <a role="button" className={ `navbar-burger ${askNavbarStateClass(isActive)}` }
