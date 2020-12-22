@@ -2,7 +2,7 @@ import React from 'react';
 import * as Bulma from '@bulma';
 import Image from '@image';
 
-import Table from './table';
+import NamesDescription from './namesDescription';
 
 const MyName = () => {
   return (
@@ -15,7 +15,7 @@ const MyName = () => {
         </Bulma.Column>
 
         <Bulma.Column>
-          <Table />
+          <NamesDescription />
         </Bulma.Column>
 
       </Bulma.Column>
