@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Bulma from '@bulma';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 // TitleModule alias
 const Title = Bulma.elements.Title;
@@ -14,7 +15,13 @@ const NamesDescription = () => {
       <Title is={ 2 }         ># Live</Title>
       <Title subTitle is={ 4 }>Toyota, Aichi</Title>
       <Title is={ 2 }         ># Like</Title>
-      <Title subTitle is={ 4 }>MusicGame, Web Dev(FrontEnd), DDLC</Title>
+      <Title subTitle is={ 4 }>
+        MusicGame,
+        <AniLink fade duration={ 0.5 } to='/dev'>
+          Web Dev(FrontEnd)
+        </AniLink>,
+        DDLC
+      </Title>
     </>
   );
 };
