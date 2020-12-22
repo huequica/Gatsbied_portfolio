@@ -30,17 +30,20 @@ import * as Bulma from '@bulma';
 //   );
 // };
 
+// TitleModule alias
+const Title = Bulma.elements.Title;
+
 const Table = () => {
   return (
     <>
-      <Bulma.elements.Title is={ 2 }># Name</Bulma.elements.Title>
-      <Bulma.elements.Title subTitle is={ 4 }>Haru Yakumo</Bulma.elements.Title>
-      <Bulma.elements.Title is={ 2 }># RealName</Bulma.elements.Title>
-      <Bulma.elements.Title subTitle is={ 4 }>Harumi Ono</Bulma.elements.Title>
-      <Bulma.elements.Title is={ 2 }># Live</Bulma.elements.Title>
-      <Bulma.elements.Title subTitle is={ 4 }>Toyota, Aichi</Bulma.elements.Title>
-      <Bulma.elements.Title is={ 2 }># Like</Bulma.elements.Title>
-      <Bulma.elements.Title subTitle is={ 4 }>MusicGame, Web Dev(FrontEnd), DDLC</Bulma.elements.Title>
+      <Title is={ 2 }># Name</Title>
+      <Title subTitle is={ 4 }>Haru Yakumo</Title>
+      <Title is={ 2 }># RealName</Title>
+      <Title subTitle is={ 4 }>Harumi Ono</Title>
+      <Title is={ 2 }># Live</Title>
+      <Title subTitle is={ 4 }>Toyota, Aichi</Title>
+      <Title is={ 2 }># Like</Title>
+      <Title subTitle is={ 4 }>MusicGame, Web Dev(FrontEnd), DDLC</Title>
     </>
   );
 };
