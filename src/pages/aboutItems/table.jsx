@@ -33,14 +33,14 @@ import * as Bulma from '@bulma';
 const Table = () => {
   return (
     <>
-      <Bulma.elements.Title subTitle># Name</Bulma.elements.Title>
-      Haru Yakumo
-      <Bulma.elements.Title subTitle># RealName</Bulma.elements.Title>
-      Harumi Ono
-      <Bulma.elements.Title subTitle># Live</Bulma.elements.Title>
-      Toyota, Aichi
-      <Bulma.elements.Title subTitle># Like</Bulma.elements.Title>
-      MusicGame, Web Dev(FrontEnd), DDLC
+      <Bulma.elements.Title is={ 2 }># Name</Bulma.elements.Title>
+      <Bulma.elements.Title subTitle is={ 4 }>Haru Yakumo</Bulma.elements.Title>
+      <Bulma.elements.Title is={ 2 }># RealName</Bulma.elements.Title>
+      <Bulma.elements.Title subTitle is={ 4 }>Harumi Ono</Bulma.elements.Title>
+      <Bulma.elements.Title is={ 2 }># Live</Bulma.elements.Title>
+      <Bulma.elements.Title subTitle is={ 4 }>Toyota, Aichi</Bulma.elements.Title>
+      <Bulma.elements.Title is={ 2 }># Like</Bulma.elements.Title>
+      <Bulma.elements.Title subTitle is={ 4 }>MusicGame, Web Dev(FrontEnd), DDLC</Bulma.elements.Title>
     </>
   );
 };
