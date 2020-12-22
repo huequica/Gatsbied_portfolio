@@ -13,7 +13,7 @@ const askNavbarStateClass = (state) => {
 const NavBarItems = ({ isNowActive }) => {
 
   return (
-    <div id="navbarBasicExample" className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
+    <div className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
       <div className="navbar-start">
 
         <AniLink fade duration={ 0.5 }
