@@ -4,7 +4,7 @@ import * as Bulma from '@bulma';
 // TitleModule alias
 const Title = Bulma.elements.Title;
 
-const Table = () => {
+const NamesDescription = () => {
   return (
     <>
       <Title is={ 2 }># Name</Title>
@@ -19,4 +19,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default NamesDescription;
