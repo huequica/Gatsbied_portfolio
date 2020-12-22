@@ -30,4 +30,19 @@ import * as Bulma from '@bulma';
 //   );
 // };
 
+const Table = () => {
+  return (
+    <>
+      <Bulma.elements.Title subTitle># Name</Bulma.elements.Title>
+      Haru Yakumo
+      <Bulma.elements.Title subTitle># RealName</Bulma.elements.Title>
+
+      <Bulma.elements.Title subTitle># Live</Bulma.elements.Title>
+
+      <Bulma.elements.Title subTitle># Like</Bulma.elements.Title>
+
+    </>
+  );
+};
+
 export default Table;
