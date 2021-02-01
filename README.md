@@ -13,3 +13,11 @@ New Portfolio site( **WIP** )
   Note: Please do not use `npm`
 
 2. `$ yarn develop`
+
+# Screenshots
+
+## /about
+![about](./README_images/1.png)
+
+## /dev
+![dev](./README_images/2.png)
