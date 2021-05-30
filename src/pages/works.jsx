@@ -16,7 +16,7 @@ const Works = () => (
 
     <Bulma.elements.Title subTitle>
       <Intent link='https://twitter.com/hikakinsymmetry'>
-        # ヒカキンシンメトリーbot
+        # ヒカキンシンメトリーbot(新)
       </Intent>
     </Bulma.elements.Title>
 
