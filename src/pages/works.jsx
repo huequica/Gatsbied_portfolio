@@ -20,7 +20,8 @@ const Works = () => (
       </Intent>
     </Bulma.elements.Title>
 
-    <a rel='noreferrer' target='_blank' href='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</a>の稼働が止まっていたので再実装して公開したbot
+    <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot
+    
     <div className='buttons are-large'>
       <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
         <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
