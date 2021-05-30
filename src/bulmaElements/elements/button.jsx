@@ -8,14 +8,16 @@ import PropTypes from 'prop-types';
  * @param {string} props.size `is-small`, `is-large`, etc
  */
 const Button = (props) => {
+  const Options = [];
 
-  const color = props.Color || '';
-  const size = props.size || '';
-  const lightColor = props.isLight ? 'is-light' : '';
-  const rounded = props.isRounded ? 'is-rounded' : '';
-
+  if(typeof props.color === 'string') Options.push(props.color);
+  if(typeof props.size === 'string') Options.push(props.size);
+  if(props.isLight) Options.push('is-light');
+  if(props.isRounded) Options.push('is-rounded');
+  
+  
   return (
-    <button className={ `button ${color} ${size} ${lightColor} ${rounded}` }>
+    <button className={ `button ${Options.join(' ')}` }>
       { props.children }
     </button>
   );
