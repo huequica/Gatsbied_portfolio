@@ -27,6 +27,12 @@ const NavBarItems = ({ isNowActive }) => {
         >
           Develop
         </AniLink>
+
+        <AniLink fade duration={ 0.5 }
+          to='/works' className='navbar-item'
+        >
+          Works
+        </AniLink>
       </div>
     </div>
   );
