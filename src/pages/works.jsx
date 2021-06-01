@@ -15,9 +15,7 @@ const Works = () => (
     </Bulma.layout.Hero>
 
     <Bulma.elements.Title subTitle>
-      <Intent link='https://twitter.com/hikakinsymmetry'>
-        # ヒカキンシンメトリーbot(新)
-      </Intent>
+      # ヒカキンシンメトリーbot(新)
     </Bulma.elements.Title>
 
     <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot
