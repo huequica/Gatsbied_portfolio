@@ -24,6 +24,10 @@ const Works = () => (
       <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
         <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
       </Intent>
+
+      <Intent link='https://twitter.com/hikakinsymmetry'>
+        <Bulma.elements.Button isRounded color='is-success'>Twitter</Bulma.elements.Button>
+      </Intent>
     </div>
   </Layout>
 );
