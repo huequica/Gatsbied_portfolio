@@ -20,7 +20,7 @@ const Works = () => (
 
     <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot
     
-    <div className='buttons are-large'>
+    <div className='buttons are-medium'>
       <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
         <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
       </Intent>
