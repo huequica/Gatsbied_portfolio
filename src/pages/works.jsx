@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@layout';
 import * as Bulma from '@bulma';
+import Image from '@image';
 
 const Intent = ({children, link}) => (
   <a href={ link } target='_blank' rel='noreferrer'>
@@ -16,7 +17,7 @@ const Works = () => (
     
     <Bulma.Column Parent>
       <Bulma.Column size='is-3'>
-
+        <Image filename='hikakinsymmetry.png' alt='@hikakinSymmetry'/>
       </Bulma.Column>
 
       <Bulma.Column>
