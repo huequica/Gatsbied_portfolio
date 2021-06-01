@@ -25,7 +25,7 @@ const Works = () => (
         </Bulma.elements.Title>
 
         <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot<br />
-        百聞は一見に如かずなので一回Twitterを見てほしい   
+        百聞は一見に如かずなので一回Twitterを見てほしい
         
         <div className='buttons are-medium'>
           <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
