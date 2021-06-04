@@ -19,7 +19,7 @@ const Works = () => (
     
     <Bulma.elements.Title># 個人の制作物</Bulma.elements.Title>
 
-    <Box>
+    <Box> { /* @HikakinSymmetry */ }
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
           <Image filename='hikakinsymmetry.png' alt='@hikakinSymmetry'/>
