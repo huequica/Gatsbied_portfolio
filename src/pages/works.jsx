@@ -68,7 +68,8 @@ const Works = () => (
             </Intent>
 
             <Intent link='https://suspicious-curran-504da5.netlify.app/'>
-              <Bulma.elements.Button isRounded color='is-success'>Sample</Bulma.elements.Button>
+              <Bulma.elements.Button isRounded color='is-info'>Sample</Bulma.elements.Button>
+            </Intent>
             </Intent>
           </div>
 
