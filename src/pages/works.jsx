@@ -70,6 +70,12 @@ const Works = () => (
             <Intent link='https://suspicious-curran-504da5.netlify.app/'>
               <Bulma.elements.Button isRounded color='is-info'>Sample</Bulma.elements.Button>
             </Intent>
+          </div>
+
+        </Bulma.Column>
+
+      </Bulma.Column>
+    </Box>
             </Intent>
           </div>
 
