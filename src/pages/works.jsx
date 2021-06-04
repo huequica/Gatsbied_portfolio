@@ -17,6 +17,8 @@ const Works = () => (
       <Bulma.elements.Title>/worsks</Bulma.elements.Title>
     </Bulma.layout.Hero>
     
+    <Bulma.elements.Title># 個人の制作物</Bulma.elements.Title>
+
     <Box>
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
