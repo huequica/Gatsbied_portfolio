@@ -76,6 +76,27 @@ const Works = () => (
 
       </Bulma.Column>
     </Box>
+
+    <Bulma.elements.Title># OSS Contribution</Bulma.elements.Title>
+
+    <Box> { /* @Types/twit */ }
+      <Bulma.Column Parent>
+        
+        <Bulma.Column size='is-3' /> { /* Empty column */ }
+
+        <Bulma.Column>
+          <Bulma.elements.Title subTitle>
+            @types/twit
+          </Bulma.elements.Title>
+
+          <Intent link='https://www.npmjs.com/package/twit'>twit</Intent>の型定義が古くて1枚の画像の取得しかできなそうだったので追加したPR      
+          <div className='buttons are-medium'>
+            <Intent link='https://github.com/DefinitelyTyped/DefinitelyTyped/pull/53197'>
+              <Bulma.elements.Button isRounded color='is-dark'>GitHub PR</Bulma.elements.Button>
+            </Intent>
+
+            <Intent link='https://www.npmjs.com/package/@types/twit'>
+              <Bulma.elements.Button isRounded color='is-success'>npmjs.com</Bulma.elements.Button>
             </Intent>
           </div>
 
