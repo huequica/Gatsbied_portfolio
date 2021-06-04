@@ -46,8 +46,37 @@ const Works = () => (
         </Bulma.Column>
 
       </Bulma.Column>
-
     </Box>
+
+    <Box> { /* soundrop_otogibaraEra */ }
+      <Bulma.Column Parent>
+        <Bulma.Column size='is-3'>
+          <Image filename='sdp_oe.png' alt='@hikakinSymmetry'/>
+        </Bulma.Column>
+
+        <Bulma.Column>
+          <Bulma.elements.Title subTitle>
+            soundrop_OtogibaraEra
+          </Bulma.elements.Title>
+          にじさんじに所属(していた)御伽原江良の声を出すだけのおもちゃ<br />
+          Reactを知るために作ったが、ロゴも自分で作ってたりする<br />
+          かつてはCircle CIでEC2に自動デプロイまでしていた(今はインスタンスごと消した)
+
+          <div className='buttons are-medium'>
+            <Intent link='https://github.com/huequica/soundrop_OtogibaraEra'>
+              <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
+            </Intent>
+
+            <Intent link='https://suspicious-curran-504da5.netlify.app/'>
+              <Bulma.elements.Button isRounded color='is-success'>Sample</Bulma.elements.Button>
+            </Intent>
+          </div>
+
+        </Bulma.Column>
+
+      </Bulma.Column>
+    </Box>
+
   </Layout>
 );
 
