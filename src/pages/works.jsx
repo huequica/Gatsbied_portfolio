@@ -39,7 +39,7 @@ const Works = () => (
             </Intent>
 
             <Intent link='https://twitter.com/hikakinsymmetry'>
-              <Bulma.elements.Button isRounded color='is-success'>Twitter</Bulma.elements.Button>
+              <Bulma.elements.Button isRounded color='is-info'>Twitter</Bulma.elements.Button>
             </Intent>
           </div>
 
@@ -68,7 +68,7 @@ const Works = () => (
             </Intent>
 
             <Intent link='https://suspicious-curran-504da5.netlify.app/'>
-              <Bulma.elements.Button isRounded color='is-info'>Sample</Bulma.elements.Button>
+              <Bulma.elements.Button isRounded color='is-success'>Sample</Bulma.elements.Button>
             </Intent>
           </div>
 
