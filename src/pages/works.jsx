@@ -9,12 +9,15 @@ const Intent = ({children, link}) => (
   </a>
 );
 
+const Box = ({children}) => <div className='box'>{ children }</div>;
+
 const Works = () => (
   <Layout>
     <Bulma.layout.Hero colorStyle='is-primary'>
       <Bulma.elements.Title>/worsks</Bulma.elements.Title>
     </Bulma.layout.Hero>
-    <div className='box'>
+    
+    <Box>
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
           <Image filename='hikakinsymmetry.png' alt='@hikakinSymmetry'/>
@@ -42,7 +45,7 @@ const Works = () => (
 
       </Bulma.Column>
 
-    </div>
+    </Box>
   </Layout>
 );
 
