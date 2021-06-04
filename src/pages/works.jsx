@@ -30,9 +30,11 @@ const Works = () => (
             # ヒカキンシンメトリーbot(新)
           </Bulma.elements.Title>
 
-          <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot<br />
-          百聞は一見に如かずなので一回Twitterを見てほしい
-          
+          <p className='mb-3'>
+            <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot<br />
+            百聞は一見に如かずなので一回Twitterを見てほしい
+          </p>
+
           <div className='buttons are-medium'>
             <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
               <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
@@ -58,9 +60,12 @@ const Works = () => (
           <Bulma.elements.Title subTitle>
             soundrop_OtogibaraEra
           </Bulma.elements.Title>
-          にじさんじに所属(していた)御伽原江良の声を出すだけのおもちゃ<br />
-          Reactを知るために作ったが、ロゴも自分で作ってたりする<br />
-          かつてはCircle CIでEC2に自動デプロイまでしていた(今はインスタンスごと消した)
+
+          <p className='mb-3'>
+            にじさんじに所属(していた)御伽原江良の声を出すだけのおもちゃ<br />
+            Reactを知るために作ったが、ロゴも自分で作ってたりする<br />
+            かつてはCircle CIでEC2に自動デプロイまでしていた(今はインスタンスごと消した)
+          </p>
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/huequica/soundrop_OtogibaraEra'>
@@ -89,7 +94,10 @@ const Works = () => (
             @types/twit
           </Bulma.elements.Title>
 
-          <Intent link='https://www.npmjs.com/package/twit'>twit</Intent>の型定義が古くて1枚の画像の取得しかできなそうだったので追加したPR      
+          <p className='mb-3'>
+            <Intent link='https://www.npmjs.com/package/twit'>twit</Intent>の型定義が古くて1枚の画像の取得しかできなそうだったので追加したPR
+          </p>
+
           <div className='buttons are-medium'>
             <Intent link='https://github.com/DefinitelyTyped/DefinitelyTyped/pull/53197'>
               <Bulma.elements.Button isRounded color='is-dark'>GitHub PR</Bulma.elements.Button>
