@@ -3,7 +3,7 @@ import * as Bulma from '@bulma';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 // TitleModule alias
-const Title = Bulma.elements.Title;
+const Title = Bulma.Elements.Title;
 
 const NamesDescription = () => {
   return (

@@ -3,7 +3,7 @@ import Layout from '@layout';
 import * as Bulma from '@bulma';
 
 // TitleModule alias
-const Title = Bulma.elements.Title;
+const Title = Bulma.Elements.Title;
 
 const FrontEnd = () => (
   <>
@@ -50,9 +50,9 @@ const Descriptions = () => (
 
 const Dev = () => (
   <Layout>
-    <Bulma.layout.Hero colorStyle='is-primary'>
+    <Bulma.Layout.Hero colorStyle='is-primary'>
       <Title>/dev</Title>
-    </Bulma.layout.Hero>
+    </Bulma.Layout.Hero>
 
     <Descriptions />
   </Layout>

@@ -13,11 +13,11 @@ const Box = ({children}) => <div className='box'>{ children }</div>;
 
 const Works = () => (
   <Layout>
-    <Bulma.layout.Hero colorStyle='is-primary'>
-      <Bulma.elements.Title>/worsks</Bulma.elements.Title>
-    </Bulma.layout.Hero>
+    <Bulma.Layout.Hero colorStyle='is-primary'>
+      <Bulma.Elements.Title>/worsks</Bulma.Elements.Title>
+    </Bulma.Layout.Hero>
     
-    <Bulma.elements.Title># 個人の制作物</Bulma.elements.Title>
+    <Bulma.Elements.Title># 個人の制作物</Bulma.Elements.Title>
 
     <Box> { /* @HikakinSymmetry */ }
       <Bulma.Column Parent>
@@ -26,9 +26,9 @@ const Works = () => (
         </Bulma.Column>
 
         <Bulma.Column>
-          <Bulma.elements.Title subTitle>
+          <Bulma.Elements.Title subTitle>
             # ヒカキンシンメトリーbot(新)
-          </Bulma.elements.Title>
+          </Bulma.Elements.Title>
 
           <p className='mb-3'>
             <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot<br />
@@ -37,11 +37,11 @@ const Works = () => (
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
-              <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
+              <Bulma.Elements.Button isRounded color='is-dark'>GitHub</Bulma.Elements.Button>
             </Intent>
 
             <Intent link='https://twitter.com/hikakinsymmetry'>
-              <Bulma.elements.Button isRounded color='is-info'>Twitter</Bulma.elements.Button>
+              <Bulma.Elements.Button isRounded color='is-info'>Twitter</Bulma.Elements.Button>
             </Intent>
           </div>
 
@@ -57,9 +57,9 @@ const Works = () => (
         </Bulma.Column>
 
         <Bulma.Column>
-          <Bulma.elements.Title subTitle>
+          <Bulma.Elements.Title subTitle>
             soundrop_OtogibaraEra
-          </Bulma.elements.Title>
+          </Bulma.Elements.Title>
 
           <p className='mb-3'>
             にじさんじに所属(していた)御伽原江良の声を出すだけのおもちゃ<br />
@@ -69,11 +69,11 @@ const Works = () => (
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/huequica/soundrop_OtogibaraEra'>
-              <Bulma.elements.Button isRounded color='is-dark'>GitHub</Bulma.elements.Button>
+              <Bulma.Elements.Button isRounded color='is-dark'>GitHub</Bulma.Elements.Button>
             </Intent>
 
             <Intent link='https://suspicious-curran-504da5.netlify.app/'>
-              <Bulma.elements.Button isRounded color='is-success'>Sample</Bulma.elements.Button>
+              <Bulma.Elements.Button isRounded color='is-success'>Sample</Bulma.Elements.Button>
             </Intent>
           </div>
 
@@ -82,7 +82,7 @@ const Works = () => (
       </Bulma.Column>
     </Box>
 
-    <Bulma.elements.Title># OSS Contribution</Bulma.elements.Title>
+    <Bulma.Elements.Title># OSS Contribution</Bulma.Elements.Title>
 
     <Box> { /* @Types/twit */ }
       <Bulma.Column Parent>
@@ -90,9 +90,9 @@ const Works = () => (
         <Bulma.Column size='is-3' /> { /* Empty column */ }
 
         <Bulma.Column>
-          <Bulma.elements.Title subTitle>
+          <Bulma.Elements.Title subTitle>
             @types/twit
-          </Bulma.elements.Title>
+          </Bulma.Elements.Title>
 
           <p className='mb-3'>
             <Intent link='https://www.npmjs.com/package/twit'>twit</Intent>の型定義が古くて1枚の画像の取得しかできなそうだったので追加したPR
@@ -100,11 +100,11 @@ const Works = () => (
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/DefinitelyTyped/DefinitelyTyped/pull/53197'>
-              <Bulma.elements.Button isRounded color='is-dark'>GitHub PR</Bulma.elements.Button>
+              <Bulma.Elements.Button isRounded color='is-dark'>GitHub PR</Bulma.Elements.Button>
             </Intent>
 
             <Intent link='https://www.npmjs.com/package/@types/twit'>
-              <Bulma.elements.Button isRounded color='is-success'>npmjs.com</Bulma.elements.Button>
+              <Bulma.Elements.Button isRounded color='is-success'>npmjs.com</Bulma.Elements.Button>
             </Intent>
           </div>
 

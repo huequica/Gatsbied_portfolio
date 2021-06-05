@@ -7,7 +7,7 @@ import NamesDescription from './namesDescription';
 const MyName = () => {
   return (
     <>
-      <Bulma.elements.Title subTitle>Haru Yakumoについて</Bulma.elements.Title>
+      <Bulma.Elements.Title subTitle>Haru Yakumoについて</Bulma.Elements.Title>
 
       <Bulma.Column Parent>
         <Bulma.Column size='is-4'>

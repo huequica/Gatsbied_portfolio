@@ -1,5 +1,5 @@
-import * as elements from './elements/elements';
-import * as layout from './layout/layout';
+import * as Elements from './elements/elements';
+import * as Layout from './layout/layout';
 import Column from './column';
 
-export { elements, layout, Column };
+export { Elements, Layout, Column };
