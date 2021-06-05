@@ -14,7 +14,7 @@ const About = () => (
     <Bulma.Elements.Title subTitle>{ 'huequica.xyzについて' }</Bulma.Elements.Title>
 
     Haru Yakumoが個人で運営しているポートフォリオみたいなサイトです。<br />
-    GatsbyJSによって記述されています。
+    GatsbyJS と Bulma によって構築されています。
 
     <MyName />
   </Layout>
