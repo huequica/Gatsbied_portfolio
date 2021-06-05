@@ -1,6 +1,7 @@
 import React from 'react';
 import * as Bulma from '@bulma';
-import Image from '@image';
+import { StaticImage } from "gatsby-plugin-image";
+
 
 import NamesDescription from './namesDescription';
 
@@ -11,7 +12,9 @@ const MyName = () => {
 
       <Bulma.Column Parent>
         <Bulma.Column size='is-4'>
-          <Image filename='dark.png' alt='icon'/>
+          <figure className='image'>
+            <StaticImage imgClassName='is-rounded' src='../../images/dark.png' alt='icon' />
+          </figure>
         </Bulma.Column>
 
         <Bulma.Column>

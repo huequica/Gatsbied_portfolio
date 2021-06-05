@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@layout';
 import * as Bulma from '@bulma';
-import Image from '@image';
+import { StaticImage } from "gatsby-plugin-image";
 
 const Intent = ({children, link}) => (
   <a href={ link } target='_blank' rel='noreferrer'>
@@ -22,7 +22,10 @@ const Works = () => (
     <Box> { /* @HikakinSymmetry */ }
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
-          <Image filename='hikakinsymmetry.png' alt='@hikakinSymmetry'/>
+          <figure className='image'>
+            <StaticImage src='../images/hikakinsymmetry.png' alt='icon' />
+          </figure>
+
         </Bulma.Column>
 
         <Bulma.Column>
@@ -53,7 +56,10 @@ const Works = () => (
     <Box> { /* soundrop_otogibaraEra */ }
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
-          <Image filename='sdp_oe.png' alt='@hikakinSymmetry'/>
+          <figure className='image'>
+            <StaticImage src='../images/sdp_oe.png' alt='soundrop_otogibaraEra' />
+          </figure>
+
         </Bulma.Column>
 
         <Bulma.Column>
