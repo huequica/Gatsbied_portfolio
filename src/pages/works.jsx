@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '@layout';
 import * as Bulma from '@bulma';
-import Image from '@image';
+import { StaticImage } from "gatsby-plugin-image";
 
 const Intent = ({children, link}) => (
   <a href={ link } target='_blank' rel='noreferrer'>
@@ -22,7 +22,10 @@ const Works = () => (
     <Box> { /* @HikakinSymmetry */ }
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
-          <Image filename='hikakinsymmetry.png' alt='@hikakinSymmetry'/>
+          <figure className='image'>
+            <StaticImage src='../images/hikakinsymmetry.png' alt='@hikakinSymmetry' />
+          </figure>
+
         </Bulma.Column>
 
         <Bulma.Column>
@@ -30,7 +33,7 @@ const Works = () => (
             # ヒカキンシンメトリーbot(新)
           </Bulma.Elements.Title>
 
-          <p className='mb-3'>
+          <p className='mb-3 is-size-5'>
             <Intent link='https://twitter.com/hikakin_sym'>ヒカキンシンメトリーbot</Intent>の稼働が止まっていたので再実装して公開したbot<br />
             百聞は一見に如かずなので一回Twitterを見てほしい
           </p>
@@ -53,7 +56,10 @@ const Works = () => (
     <Box> { /* soundrop_otogibaraEra */ }
       <Bulma.Column Parent>
         <Bulma.Column size='is-3'>
-          <Image filename='sdp_oe.png' alt='@hikakinSymmetry'/>
+          <figure className='image'>
+            <StaticImage src='../images/sdp_oe.png' alt='soundrop_otogibaraEra' />
+          </figure>
+
         </Bulma.Column>
 
         <Bulma.Column>
@@ -61,7 +67,7 @@ const Works = () => (
             soundrop_OtogibaraEra
           </Bulma.Elements.Title>
 
-          <p className='mb-3'>
+          <p className='mb-3 is-size-5'>
             にじさんじに所属(していた)御伽原江良の声を出すだけのおもちゃ<br />
             Reactを知るために作ったが、ロゴも自分で作ってたりする<br />
             かつてはCircle CIでEC2に自動デプロイまでしていた(今はインスタンスごと消した)
@@ -94,7 +100,7 @@ const Works = () => (
             @types/twit
           </Bulma.Elements.Title>
 
-          <p className='mb-3'>
+          <p className='mb-3 is-size-5'>
             <Intent link='https://www.npmjs.com/package/twit'>twit</Intent>の型定義が古くて1枚の画像の取得しかできなそうだったので追加したPR
           </p>
 
