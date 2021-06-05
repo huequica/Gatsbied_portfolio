@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import propTypes from 'prop-types';
 
 /**
@@ -35,7 +35,7 @@ const Image = (props) => {
 
   return (
     <figure className={ dimension ? `image is-${dimension}` : 'image' }>
-      <Img fluid={ searchedImage } alt={ props.alt } />
+      <GatsbyImage image={ searchedImage } alt={ props.alt } />
     </figure>
   );
 };
