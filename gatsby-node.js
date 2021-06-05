@@ -14,7 +14,6 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       alias: {
         '@bulma' : resolve(__dirname, 'src/bulmaElements'),
         '@layout': resolve(__dirname, 'src/components/layout'),
-        '@image' : resolve(__dirname, 'src/components/image')
       }
     },
   });
