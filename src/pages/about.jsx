@@ -7,11 +7,11 @@ import MyName from './aboutItems/myname';
 
 const About = () => (
   <Layout>
-    <Bulma.layout.Hero colorStyle='is-primary'>
-      <Bulma.elements.Title>/about</Bulma.elements.Title>
-    </Bulma.layout.Hero>
+    <Bulma.Layout.Hero colorStyle='is-primary'>
+      <Bulma.Elements.Title>/about</Bulma.Elements.Title>
+    </Bulma.Layout.Hero>
 
-    <Bulma.elements.Title subTitle>{ 'huequica.xyzについて' }</Bulma.elements.Title>
+    <Bulma.Elements.Title subTitle>{ 'huequica.xyzについて' }</Bulma.Elements.Title>
 
     Haru Yakumoが個人で運営しているポートフォリオみたいなサイトです。<br />
     GatsbyJSによって記述されています。
