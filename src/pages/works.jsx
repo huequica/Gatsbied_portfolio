@@ -1,9 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-
+import { StaticImage } from "gatsby-plugin-image";
 import Layout from '@layout';
 import * as Bulma from '@bulma';
-import { StaticImage } from "gatsby-plugin-image";
 
 const Intent = ({children, link}) => (
   <a href={ link } target='_blank' rel='noreferrer'>
