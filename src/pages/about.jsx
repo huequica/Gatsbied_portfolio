@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Layout from '@layout';
 import * as Bulma from '@bulma';
 
@@ -7,6 +8,7 @@ import MyName from './aboutItems/myname';
 
 const About = () => (
   <Layout>
+    <Helmet title='About | huequica.xyz' />
     <Bulma.Layout.Hero colorStyle='is-primary'>
       <Bulma.Elements.Title>/about</Bulma.Elements.Title>
     </Bulma.Layout.Hero>

@@ -1,4 +1,6 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
 import Layout from '@layout';
 import * as Bulma from '@bulma';
 import { StaticImage } from "gatsby-plugin-image";
@@ -13,6 +15,7 @@ const Box = ({children}) => <div className='box'>{ children }</div>;
 
 const Works = () => (
   <Layout>
+    <Helmet title='Works | huequica.xyz' />
     <Bulma.Layout.Hero colorStyle='is-primary'>
       <Bulma.Elements.Title>/worsks</Bulma.Elements.Title>
     </Bulma.Layout.Hero>
