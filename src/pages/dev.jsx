@@ -1,4 +1,6 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
 import Layout from '@layout';
 import * as Bulma from '@bulma';
 
@@ -50,6 +52,7 @@ const Descriptions = () => (
 
 const Dev = () => (
   <Layout>
+    <Helmet title='Develop | huequica.xyz' />
     <Bulma.Layout.Hero colorStyle='is-primary'>
       <Title>/dev</Title>
     </Bulma.Layout.Hero>

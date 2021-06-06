@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from "gatsby";
 
@@ -33,6 +34,10 @@ const Layout = (props) => {
 
   return (
     <>
+      <Helmet>
+        <html lang='ja' />
+        <meta name='description' content="Haru_Yakumo's Profile Site" />
+      </Helmet>
       <NavBar siteTitle={ title } />
       <Margin disableMargin={ props.disableMargin }>
         { contents }
