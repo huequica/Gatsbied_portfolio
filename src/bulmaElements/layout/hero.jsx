@@ -39,9 +39,7 @@ const Hero = (props) => {
   return (
     <section className={ heroStyles.join(' ') }>
       <div className='hero-body'>
-        <div className='container'>
-          { contents }
-        </div>
+        { contents }
       </div>
     </section>
   );
