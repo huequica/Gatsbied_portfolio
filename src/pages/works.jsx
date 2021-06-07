@@ -10,7 +10,7 @@ const Intent = ({children, link}) => (
   </a>
 );
 
-const Box = ({children}) => <div className='box'>{ children }</div>;
+const Box = Bulma.Elements.Box;
 
 const Works = () => (
   <Layout>
