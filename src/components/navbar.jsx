@@ -33,19 +33,19 @@ const NavBarItems = () => {
       <AniLink fade duration={ 0.5 }
         to='/about' className='navbar-item'
       >
-        About
+        📝About
       </AniLink>
 
       <AniLink fade duration={ 0.5 }
         to='/dev' className='navbar-item'
       >
-        Develop
+        💻Develop
       </AniLink>
 
       <AniLink fade duration={ 0.5 }
         to='/works' className='navbar-item'
       >
-        Works
+        💼Works
       </AniLink>
     </div>
   );
