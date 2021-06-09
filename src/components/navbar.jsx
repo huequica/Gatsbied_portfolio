@@ -1,5 +1,8 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+
+import * as Bulma from '@bulma';
 
 /**
  * return navbar state class
@@ -33,19 +36,19 @@ const NavBarItems = () => {
       <AniLink fade duration={ 0.5 }
         to='/about' className='navbar-item'
       >
-        About
+        📝About
       </AniLink>
 
       <AniLink fade duration={ 0.5 }
         to='/dev' className='navbar-item'
       >
-        Develop
+        💻Develop
       </AniLink>
 
       <AniLink fade duration={ 0.5 }
         to='/works' className='navbar-item'
       >
-        Works
+        💼Works
       </AniLink>
     </div>
   );
@@ -56,7 +59,7 @@ const NavBarEnd = () => (
     <div className="navbar-item">
       <div className="buttons">
         <Intent link='https://twitter.com/huequica' color='is-info'>
-          @huequica
+          <Bulma.Elements.IconText icon={ faTwitter } text='@huequica' />
         </Intent>
 
         <Intent link='https://twitter.com/huequica' color='is-dark'>
