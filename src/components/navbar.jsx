@@ -25,30 +25,28 @@ const Intent = ({children, link, color}) => {
   );
 };
 
-const NavBarItems = ({ isNowActive }) => {
+const NavBarItems = () => {
 
   return (
-    <div className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
-      <div className="navbar-start">
+    <div className="navbar-start">
 
-        <AniLink fade duration={ 0.5 }
-          to='/about' className='navbar-item'
-        >
-          About
-        </AniLink>
+      <AniLink fade duration={ 0.5 }
+        to='/about' className='navbar-item'
+      >
+        About
+      </AniLink>
 
-        <AniLink fade duration={ 0.5 }
-          to='/dev' className='navbar-item'
-        >
-          Develop
-        </AniLink>
+      <AniLink fade duration={ 0.5 }
+        to='/dev' className='navbar-item'
+      >
+        Develop
+      </AniLink>
 
-        <AniLink fade duration={ 0.5 }
-          to='/works' className='navbar-item'
-        >
-          Works
-        </AniLink>
-      </div>
+      <AniLink fade duration={ 0.5 }
+        to='/works' className='navbar-item'
+      >
+        Works
+      </AniLink>
     </div>
   );
 };
@@ -83,7 +81,9 @@ const NavBar = (props) => {
         </a>
       </div>
       
-      <NavBarItems isNowActive={ isActive } />
+      <div className={ `navbar-menu ${askNavbarStateClass(isActive)}` }>
+
+      </div>
     </nav>
   );
 };
