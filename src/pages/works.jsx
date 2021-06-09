@@ -1,6 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticImage } from "gatsby-plugin-image";
+import { faNpm, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 import Layout from '@layout';
 import * as Bulma from '@bulma';
 
@@ -42,11 +44,15 @@ const Works = () => (
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/HIKAKINSymmetry/nodeBot'>
-              <Bulma.Elements.Button isRounded color='is-dark'>GitHub</Bulma.Elements.Button>
+              <Bulma.Elements.Button isRounded color='is-dark'>
+                <Bulma.Elements.IconText inButton icon={ faGithub } text='Repos' />
+              </Bulma.Elements.Button>
             </Intent>
 
             <Intent link='https://twitter.com/hikakinsymmetry'>
-              <Bulma.Elements.Button isRounded color='is-info'>Twitter</Bulma.Elements.Button>
+              <Bulma.Elements.Button isRounded color='is-info'>
+                <Bulma.Elements.IconText inButton icon={ faTwitter } text='@HIKAKINSymmetry' />
+              </Bulma.Elements.Button>
             </Intent>
           </div>
 
@@ -77,7 +83,9 @@ const Works = () => (
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/huequica/soundrop_OtogibaraEra'>
-              <Bulma.Elements.Button isRounded color='is-dark'>GitHub</Bulma.Elements.Button>
+              <Bulma.Elements.Button isRounded color='is-dark'>
+                <Bulma.Elements.IconText inButton icon={ faGithub } text='Repos' />
+              </Bulma.Elements.Button>
             </Intent>
 
             <Intent link='https://suspicious-curran-504da5.netlify.app/'>
@@ -108,11 +116,15 @@ const Works = () => (
 
           <div className='buttons are-medium'>
             <Intent link='https://github.com/DefinitelyTyped/DefinitelyTyped/pull/53197'>
-              <Bulma.Elements.Button isRounded color='is-dark'>GitHub PR</Bulma.Elements.Button>
+              <Bulma.Elements.Button isRounded color='is-dark'>
+                <Bulma.Elements.IconText inButton icon={ faGithub } text='PR Page' />
+              </Bulma.Elements.Button>
             </Intent>
 
             <Intent link='https://www.npmjs.com/package/@types/twit'>
-              <Bulma.Elements.Button isRounded color='is-success'>npmjs.com</Bulma.Elements.Button>
+              <Bulma.Elements.Button isRounded color='is-success'>
+                <Bulma.Elements.IconText inButton icon={ faNpm } text='@types/twit' />
+              </Bulma.Elements.Button>
             </Intent>
           </div>
 
