@@ -10,33 +10,63 @@ const askNavbarStateClass = (state) => {
   return state ? 'is-active' : '';
 };
 
-const NavBarItems = ({ isNowActive }) => {
+/** Intent to URL in NewTab
+ * @param {node} children Link Label
+ * @param {string} link **REQUIRE** Link URL
+ * @param {string} color `is-primary`, `is-success`, etc...
+ */
+const Intent = ({children, link, color}) => {
+  const stylingClass = color ? `button ${color}` : 'button';
+
+  return(
+    <a href={ link } target='_blank' rel='noreferrer' className={ stylingClass }>
+      { children }
+    </a>
+  );
+};
+
+const NavBarItems = () => {
 
   return (
-    <div className={ `navbar-menu ${askNavbarStateClass(isNowActive)}` }>
-      <div className="navbar-start">
+    <div className="navbar-start">
 
-        <AniLink fade duration={ 0.5 }
-          to='/about' className='navbar-item'
-        >
-          About
-        </AniLink>
+      <AniLink fade duration={ 0.5 }
+        to='/about' className='navbar-item'
+      >
+        About
+      </AniLink>
 
-        <AniLink fade duration={ 0.5 }
-          to='/dev' className='navbar-item'
-        >
-          Develop
-        </AniLink>
+      <AniLink fade duration={ 0.5 }
+        to='/dev' className='navbar-item'
+      >
+        Develop
+      </AniLink>
 
-        <AniLink fade duration={ 0.5 }
-          to='/works' className='navbar-item'
-        >
-          Works
-        </AniLink>
-      </div>
+      <AniLink fade duration={ 0.5 }
+        to='/works' className='navbar-item'
+      >
+        Works
+      </AniLink>
     </div>
   );
 };
+
+const NavBarEnd = () => (
+  <div className="navbar-end">
+    <div className="navbar-item">
+      <div className="buttons">
+        <Intent link='https://twitter.com/huequica' color='is-info'>
+          @huequica
+        </Intent>
+
+        <Intent link='https://twitter.com/huequica' color='is-dark'>
+          HatenaBlog
+        </Intent>
+
+      </div>
+    </div>
+  </div>
+);
 
 const NavBar = (props) => {
 
@@ -68,7 +98,11 @@ const NavBar = (props) => {
         </a>
       </div>
       
-      <NavBarItems isNowActive={ isActive } />
+      <div className={ `navbar-menu ${askNavbarStateClass(isActive)}` }>
+
+        <NavBarItems />
+        <NavBarEnd />
+      </div>
     </nav>
   );
 };
