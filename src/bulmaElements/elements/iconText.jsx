@@ -2,12 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 
-/** Render text with icon
- * @param {IconDefinition} icon **REQUIRE** svg icon
- * @param {string} text
- */
-const IconText = ({icon, text}) => (
-  <span className='icon-text'>
+const BaseElements = ({icon, text}) => (
+  <>
     <span className='icon'>
       <FontAwesomeIcon icon={ icon } />
     </span>
@@ -15,8 +11,23 @@ const IconText = ({icon, text}) => (
     <span>
       { text }
     </span>
-  </span>
+  </>
 );
+
+/** Render text with icon
+ * @param {IconDefinition} icon **REQUIRE** svg icon
+ * @param {string} text LabelText
+ * @param {bool} inButton Use in ButtonLabel, Enable this prop
+ */
+const IconText = ({icon, text, inButton}) => {
+  const IconText = (
+    <span className='icon-text'>
+      <BaseElements icon={ icon } text={ text } />
+    </span>
+  );
+  // contain `span.icon-text` if used for not button
+  return inButton ? <BaseElements icon={ icon } text={ text } /> : IconText;
+};
 
 IconText.propTypes = {
   text: PropTypes.string,
