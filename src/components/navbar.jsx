@@ -51,6 +51,23 @@ const NavBarItems = () => {
   );
 };
 
+const NavBarEnd = () => (
+  <div className="navbar-end">
+    <div className="navbar-item">
+      <div className="buttons">
+        <Intent link='https://twitter.com/huequica' color='is-info'>
+          @huequica
+        </Intent>
+
+        <Intent link='https://twitter.com/huequica' color='is-dark'>
+          HatenaBlog
+        </Intent>
+
+      </div>
+    </div>
+  </div>
+);
+
 const NavBar = (props) => {
 
   const [isActive, setActive] = React.useState(false);
@@ -83,6 +100,8 @@ const NavBar = (props) => {
       
       <div className={ `navbar-menu ${askNavbarStateClass(isActive)}` }>
 
+        <NavBarItems />
+        <NavBarEnd />
       </div>
     </nav>
   );
