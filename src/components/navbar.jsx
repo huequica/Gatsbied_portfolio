@@ -12,13 +12,18 @@ const askNavbarStateClass = (state) => {
 
 /** Intent to URL in NewTab
  * @param {node} children Link Label
- * @param {string} link Link URL
+ * @param {string} link **REQUIRE** Link URL
+ * @param {string} color `is-primary`, `is-success`, etc...
  */
-const Intent = ({children, link}) => (
-  <a href={ link } target='_blank' rel='noreferrer'>
-    { children }
-  </a>
-);
+const Intent = ({children, link, color}) => {
+  const stylingClass = color ? `button ${color}` : 'button';
+
+  return(
+    <a href={ link } target='_blank' rel='noreferrer' className={ stylingClass }>
+      { children }
+    </a>
+  );
+};
 
 const NavBarItems = ({ isNowActive }) => {
 
