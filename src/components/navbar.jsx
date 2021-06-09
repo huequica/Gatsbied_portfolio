@@ -10,6 +10,16 @@ const askNavbarStateClass = (state) => {
   return state ? 'is-active' : '';
 };
 
+/** Intent to URL in NewTab
+ * @param {node} children Link Label
+ * @param {string} link Link URL
+ */
+const Intent = ({children, link}) => (
+  <a href={ link } target='_blank' rel='noreferrer'>
+    { children }
+  </a>
+);
+
 const NavBarItems = ({ isNowActive }) => {
 
   return (
